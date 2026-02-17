@@ -19,6 +19,6 @@ public class ActorServiceImpl implements ActorService {
     @Override
     public Actor get(Long id) {
         return actorDao.get(id).orElseThrow(
-                () -> new RuntimeException("Country with id: " + id + " is not found."));
+                () -> new RuntimeException("Actor with id: " + id + " is not found."));
     }
 }
